@@ -57,7 +57,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className='bg-white dark:bg-slate-900'>
       <nav className='bg-white dark:bg-slate-900 md:text-lg sticky z-50 top-0 w-full text-sm flex px-5 py-8 justify-between shadow-lg dark:text-white'>
         <p className='mx-3'>Zach McMullen</p>
         <ul className='flex'>
@@ -112,19 +112,19 @@ function App() {
           <h1 className="text-2xl font-medium md:text-3xl">Stats</h1>
         </section>
       </main>   
-      <footer className=' dark:bg-slate-900 text-sm w-full px-10 md:px-48 xl:px-56 2xl:px-96 pb-12'>
-          <ul className='flex py-3'>
-            <li className='mx-1 text-lg'><a className='text-sky-400 hover:text-sky-500' href='https://github.com/ZachMcM'>Github</a></li>
-            <li className='mx-1 text-lg text-sky-400'>·</li>
-            <li className='mx-1 text-lg'><a className='text-sky-400 hover:text-sky-500' href='https://www.linkedin.com/in/zach-mcmullen-ba3a2621b/'>LinkedIn</a></li>
-            <li className='mx-1 text-lg text-sky-400'>·</li>
-            <li className='mx-1 text-lg'><a className='text-sky-400 hover:text-sky-500' href='https://www.instagram.com/zachmcmullen0/'>Instagram</a></li>
-            <li className='mx-1 text-lg text-sky-400'>·</li>
-            <li className='mx-1 text-lg'><a className='text-sky-400 hover:text-sky-500' href='mailto:zachmcmullen04@gmail.com'>Email</a></li>
+      <footer className='mt-32 p-10 bg-white dark:bg-slate-900'>
+          <ul className='flex text-sm'>
+            <li className='mx-1'><a className='text-sky-400 hover:text-sky-500' href='https://github.com/ZachMcM'>Github</a></li>
+            <li className='mx-1 text-sky-400'>·</li>
+            <li className='mx-1'><a className='text-sky-400 hover:text-sky-500' href='https://www.linkedin.com/in/zach-mcmullen-ba3a2621b/'>LinkedIn</a></li>
+            <li className='mx-1 text-sky-400'>·</li>
+            <li className='mx-1'><a className='text-sky-400 hover:text-sky-500' href='https://www.instagram.com/zachmcmullen0/'>Instagram</a></li>
+            <li className='mx-1 text-sky-400'>·</li>
+            <li className='mx-1'><a className='text-sky-400 hover:text-sky-500' href='mailto:zachmcmullen04@gmail.com'>Email</a></li>
           </ul>
-          <p className='dark:text-gray-300 mx-1'>© 2021 Zach McMullen</p>
+          <p className='dark:text-gray-300 mx-1 text-xs'>© 2021 Zach McMullen</p>
         </footer>
-    </>
+    </div>
   )
 }
 
