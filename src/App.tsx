@@ -71,6 +71,16 @@ function App() {
           <p className="text-gray-400 mt-3 md:text-lg">This fullstack portfolio was built using React JS, Typescript, Tailwind CSS, Express JS, and the Github REST API. Here you can find information about my projects and me!</p>
         </section>
         <section className="my-10">
+          <h1 className="text-2xl font-medium md:text-3xl">About Me</h1>
+          <p className="text-gray-400 mt-3 md:text-lg">My name is Zach McMullen and I'm a student and developer from Las Vegas, Nevada. Beyond coding I love to play basketball, video games and spend time with my family.</p>
+          <ul className="mt-5 flex">
+            <li><a className='mr-3 text-sky-400 hover:text-sky-500 text-lg' href="https://www.instagram.com/zachmcmullen0/"><i className="fa-brands fa-instagram"></i></a></li>
+            <li><a className='mx-3 text-sky-400 hover:text-sky-500 text-lg' href="https://www.linkedin.com/in/zach-mcmullen-ba3a2621b/"><i className="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a className='mx-3 text-sky-400 hover:text-sky-500 text-lg' href="https://github.com/ZachMcM"><i className="fa-brands fa-github"></i></a></li>
+            <li><a className='mx-3 text-sky-400 hover:text-sky-500 text-lg' href="mailto:zachmcmullen04@gmail.com"><i className="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </section>
+        <section className="my-10">
           <h1 className="text-2xl font-medium md:text-3xl">Projects</h1>
           <div className="outline-none mt-6 flex items-center dark:text-white bg-transparent border border-gray-400 p-4 rounded-lg w-full focus-within:outline-sky-400 focus-within:outline-1">
                 <i className="cursor-pointer mr-2 fa-solid fa-magnifying-glass text-gray-400"></i>
@@ -99,32 +109,20 @@ function App() {
           </div>
         </section>
         <section className="my-10">
-          <h1 className="text-2xl font-medium md:text-3xl">About Me</h1>
-          <p className="text-gray-400 mt-3 md:text-lg">My name is Zach McMullen and I'm a student and developer from Las Vegas, Nevada. Beyond coding I love to play basketball, video games and spend time with my family.</p>
-          <ul className="mt-5 flex">
-            <li><a className='mr-3 text-sky-400 hover:text-sky-500 text-lg' href="https://www.instagram.com/zachmcmullen0/"><i className="fa-brands fa-instagram"></i></a></li>
-            <li><a className='mx-3 text-sky-400 hover:text-sky-500 text-lg' href="https://www.linkedin.com/in/zach-mcmullen-ba3a2621b/"><i className="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a className='mx-3 text-sky-400 hover:text-sky-500 text-lg' href="https://github.com/ZachMcM"><i className="fa-brands fa-github"></i></a></li>
-            <li><a className='mx-3 text-sky-400 hover:text-sky-500 text-lg' href="mailto:zachmcmullen04@gmail.com"><i className="fa-solid fa-envelope"></i></a></li>
-          </ul>
-        </section>
-        <section className="my-10">
           <h1 className="text-2xl font-medium md:text-3xl">Stats</h1>
         </section>
       </main>   
-      <footer className='text-sm w-full px-10 md:px-48 xl:px-56 2xl:px-96 pb-12'>
-          <ul className='my-3 flex'>
-            <li className='hover:text-gray-400 mx-2'>
-              <a href="#">Home</a>
-            </li>
-            <li className='hover:text-gray-400 mx-2'>
-              <a href="/projects">Projects</a>
-            </li>
-            <li className='hover:text-gray-400 mx-2'>
-              <a href="https://github.com/ZachMcM?tab=repositories"><i className="fab fa-github"></i></a>
-            </li>
+      <footer className=' dark:bg-slate-900 text-sm w-full px-10 md:px-48 xl:px-56 2xl:px-96 pb-12'>
+          <ul className='flex py-3'>
+            <li className='mx-1 text-lg'><a className='text-sky-400 hover:text-sky-500' href='https://github.com/ZachMcM'>Github</a></li>
+            <li className='mx-1 text-lg text-sky-400'>·</li>
+            <li className='mx-1 text-lg'><a className='text-sky-400 hover:text-sky-500' href='https://www.linkedin.com/in/zach-mcmullen-ba3a2621b/'>LinkedIn</a></li>
+            <li className='mx-1 text-lg text-sky-400'>·</li>
+            <li className='mx-1 text-lg'><a className='text-sky-400 hover:text-sky-500' href='https://www.instagram.com/zachmcmullen0/'>Instagram</a></li>
+            <li className='mx-1 text-lg text-sky-400'>·</li>
+            <li className='mx-1 text-lg'><a className='text-sky-400 hover:text-sky-500' href='mailto:zachmcmullen04@gmail.com'>Email</a></li>
           </ul>
-          <p className='dark:text-gray-300 mx-2'>© 2021 Zach McMullen</p>
+          <p className='dark:text-gray-300 mx-1'>© 2021 Zach McMullen</p>
         </footer>
     </>
   )
