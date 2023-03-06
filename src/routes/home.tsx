@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import RepoCard from '../components/RepoCard'
 import { Link } from 'react-router-dom'
+import { ScrollRestoration } from 'react-router-dom'
 
 export default function Home() {
     const [repos, setRepos] = useState<any[]>([])
@@ -17,6 +18,7 @@ export default function Home() {
 
     return (
         <main className="w-full pt-10 pb-32 px-10 flex flex-col md:px-48 xl:px-56 2xl:px-96 bg-white dark:bg-slate-900 dark:text-white">
+            <ScrollRestoration />
             <section className="my-10">
                 <h1 className="text-2xl font-medium md:text-3xl">My name is <span className='text-sky-400'>Zach McMullen</span> and welcome to my portfolio!</h1>
                 <p className="text-gray-400 mt-3 md:text-lg">This fullstack portfolio was built using React JS, Typescript, Tailwind CSS, Express JS, and the Github REST API. Here you can find information about my projects and me!</p>
