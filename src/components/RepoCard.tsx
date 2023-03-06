@@ -1,4 +1,4 @@
-function RepoCard(repo : any) {
+export default function RepoCard(repo : any) {
     const { name, description, url, language, homepage } = repo
     return (
         <div className="p-10 my-5 w-full rounded-2xl shadow-xl lg:max-w-xs lg:mr-10 xl:mr-7 hover:scale-105 ease-in-out duration-1000 cursor-pointer">
@@ -22,5 +22,3 @@ function RepoCard(repo : any) {
         </div>
     )
 }
-
-export default RepoCard
