@@ -17,7 +17,7 @@ export default function Home() {
     }
 
     return (
-        <main className="w-full pt-10 pb-32 px-10 flex flex-col md:px-48 xl:px-56 2xl:px-96 bg-white dark:bg-slate-900 dark:text-white">
+        <main className="w-full pt-10 pb-32 px-10 flex flex-col md:px-48 lg:px-44 2xl:px-96 bg-white dark:bg-slate-900 dark:text-white">
             <ScrollRestoration />
             <section className="my-10">
                 <h1 className="text-2xl font-medium md:text-3xl">My name is <span className='text-sky-400'>Zach McMullen</span> and welcome to my portfolio!</h1>
@@ -34,7 +34,7 @@ export default function Home() {
             </section>
             <section className="my-10">
                 <h1 className="text-2xl font-medium md:text-3xl">Recent Projects</h1>
-                <div className="my-10 flex flex-wrap w-full">
+                <div className="my-10 lg:grid lg:grid-cols-3 lg:gap-10">
                     {
                         repos.map((repo : any) => {
                             return (

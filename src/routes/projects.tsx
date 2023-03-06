@@ -61,7 +61,7 @@ export default function Projects() {
                     onChange={e => handleSearch(e.target.value)}
                     />
                 </div>
-                <div className="mt-10 flex flex-wrap w-full">
+                <div className="mt-10 lg:grid lg:grid-cols-3 lg:gap-10">
                     {
                         repos.map((rep: any) => {
                             return (
