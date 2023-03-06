@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import RepoCard from '../components/RepoCard'
 import Stat from '../components/Stat'
 import { ScrollRestoration } from 'react-router-dom'
@@ -8,6 +8,8 @@ export default function Projects() {
     const [search, setSearch] = useState('')
 
     const [stats, setStats] = useState<any[]>([])
+
+    const scrollRef = useRef<HTMLInputElement>(null)
   
     useEffect(() => {
       getRepos()
@@ -22,6 +24,10 @@ export default function Projects() {
         } else {
           setRepos(data.filter((repo: any) => repo.name.toLowerCase().includes(search.replace(/\s+/g, '-').toLowerCase()) || repo.language.toLowerCase().includes(search.toLowerCase())))
         }
+    }
+
+    function scrollToStats() {
+        scrollRef.current?.scrollIntoView({behavior: 'smooth'})
     }
     
     function handleSearch(userSearch: string) {
@@ -41,10 +47,10 @@ export default function Projects() {
             <section className="my-10">
                 <h1 className="text-2xl font-medium md:text-3xl">Projects</h1>
                 <p className='text-gray-400 mt-3 md:text-lg'>All of my personal and school projects. Ranging from Java programs, to fullstack web apps pulled stragiht from my Github!</p>
-                <a href='#stats' className='flex items-center mt-3 text-sky-400'>
+                <button className='flex items-center mt-3 text-sky-400' onClick={() => scrollToStats()}>
                     <p className='mr-2'>View Stats</p>
                     <i className="fa-solid fa-arrow-down"></i>
-                </a>
+                </button>
                 <div className="outline-none mt-10 flex items-center dark:text-white bg-transparent border border-gray-400 p-4 rounded-lg w-full focus-within:outline-sky-400 focus-within:outline-1">
                     <i className="cursor-pointer mr-2 fa-solid fa-magnifying-glass text-gray-400"></i>
                     <input 
@@ -70,9 +76,9 @@ export default function Projects() {
                         })
                     }
                 </div>
-                <div id='stats'></div>
             </section>
-            <section className="mt-28 mb-10">
+            <div ref={scrollRef}></div>
+            <section className="mt-40 mb-8">
                 <h1 className="text-2xl font-medium md:text-3xl">Stats</h1>
                 <div className='mt-10 w-full'>
                     {
