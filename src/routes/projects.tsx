@@ -42,7 +42,7 @@ export default function Projects() {
     }
 
     return (
-        <main className="w-full pt-10 pb-32 px-28 flex flex-col bg-white dark:bg-slate-900 dark:text-white">
+        <main className="w-full pt-10 pb-32 px-10 lg:px-28 flex flex-col bg-white dark:bg-slate-900 dark:text-white">
             <ScrollRestoration />
             <section className="my-10">
                 <h1 className="text-2xl font-medium md:text-3xl">Projects</h1>

@@ -1,7 +1,7 @@
 export default function RepoCard(repo : any) {
     const { name, description, url, language, homepage } = repo
     return (
-        <div className="p-10 w-full rounded-2xl shadow-xl hover:scale-105 ease-in-out duration-1000 cursor-pointer">
+        <div className="p-10 mb-8 lg:mb-0 w-full rounded-2xl shadow-xl hover:scale-105 ease-in-out duration-1000 cursor-pointer">
             <div className="h-5/6">
                 <p className="capitalize md:text-lg">{name}</p>
                 <p className="text-gray-400 mt-3">{description}</p>
