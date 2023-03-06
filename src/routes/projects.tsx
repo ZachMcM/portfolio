@@ -47,7 +47,7 @@ export default function Projects() {
             <section className="my-10">
                 <h1 className="text-2xl font-medium md:text-3xl">Projects</h1>
                 <p className='text-gray-400 mt-3 md:text-lg'>All of my personal and school projects. Ranging from Java programs, to fullstack web apps pulled stragiht from my Github!</p>
-                <button className='flex items-center mt-3 text-sky-400' onClick={() => scrollToStats()}>
+                <button className='flex items-center mt-3 text-sky-400 hover:text-sky-500' onClick={() => scrollToStats()}>
                     <p className='mr-2'>View Stats</p>
                     <i className="fa-solid fa-arrow-down"></i>
                 </button>
