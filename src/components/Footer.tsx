@@ -13,8 +13,6 @@ export default function Footer() {
                 <li className='mx-1 text-sky-400'>·</li>
                 <li className='mx-1'><a className='text-sky-400 hover:text-sky-500' href='https://www.linkedin.com/in/zach-mcmullen-ba3a2621b/'>LinkedIn</a></li>
                 <li className='mx-1 text-sky-400'>·</li>
-                <li className='mx-1'><a className='text-sky-400 hover:text-sky-500' href='https://www.instagram.com/zachmcmullen0/'>Instagram</a></li>
-                <li className='mx-1 text-sky-400'>·</li>
                 <li className='mx-1'><a className='text-sky-400 hover:text-sky-500' href='mailto:zachmcmullen04@gmail.com'>Email</a></li>
             </ul>
             <p className='dark:text-gray-300 mx-1 text-xs'>© 2021 Zach McMullen</p>

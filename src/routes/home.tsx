@@ -27,8 +27,7 @@ export default function Home() {
                 <h1 className="text-2xl font-medium md:text-3xl">About Me</h1>
                 <p className="text-gray-400 mt-3 md:text-lg">My name is Zach McMullen and I'm a student and developer from Las Vegas, Nevada. Beyond coding I love to play basketball, video games and spend time with my family.</p>
             <ul className="mt-5 flex">
-                <li><a className='mr-3 text-sky-400 hover:text-sky-500 text-lg' href="https://www.instagram.com/zachmcmullen0/"><i className="fa-brands fa-instagram"></i></a></li>
-                <li><a className='mx-3 text-sky-400 hover:text-sky-500 text-lg' href="https://www.linkedin.com/in/zach-mcmullen-ba3a2621b/"><i className="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a className='mr-3 text-sky-400 hover:text-sky-500 text-lg' href="https://www.linkedin.com/in/zach-mcmullen-ba3a2621b/"><i className="fa-brands fa-linkedin-in"></i></a></li>
                 <li><a className='mx-3 text-sky-400 hover:text-sky-500 text-lg' href="https://github.com/ZachMcM"><i className="fa-brands fa-github"></i></a></li>
                 <li><a className='mx-3 text-sky-400 hover:text-sky-500 text-lg' href="mailto:zachmcmullen04@gmail.com"><i className="fa-solid fa-envelope"></i></a></li>
             </ul>
@@ -50,7 +49,7 @@ export default function Home() {
                         })
                     }
                 </div>
-                <Link to={'/projects'} className='p-4 bg-sky-400 rounded-lg hover:bg-sky-500 duration-700 text-white'>All Projects</Link>
+                <Link to={'/projects'} className='p-4 bg-sky-400 rounded-md hover:bg-sky-500 duration-700 text-white'>All Projects</Link>
             </section>
         </main> 
     )
