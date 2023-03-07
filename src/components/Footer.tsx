@@ -15,7 +15,7 @@ export default function Footer() {
                 <li className='mx-1 text-sky-400'>·</li>
                 <li className='mx-1'><a className='text-sky-400 hover:text-sky-500' href='mailto:zachmcmullen04@gmail.com'>Email</a></li>
             </ul>
-            <p className='dark:text-gray-300 mx-1 text-xs'>© 2021 Zach McMullen</p>
+            <p className='text-gray-400 text-sm ml-1'>Made with <i className="fa-solid fa-heart"></i> by <a className='text-sky-400 hover:text-sky-500 cursor-pointer' href='https://zachmcmullen.com'>Zach McMullen</a></p>
         </footer>
     )
 }
