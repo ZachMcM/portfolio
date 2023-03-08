@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef, useMemo } from 'react'
 import RepoCard from '../components/RepoCard'
 import Stat from '../components/Stat'
 import { ScrollRestoration } from 'react-router-dom'
@@ -16,23 +16,20 @@ export default function Projects() {
       getStats()
     }, [])
 
+    const filteredRepos = useMemo(() => {
+        return repos.filter((repo: any) => {
+            return repo.name.toLowerCase().includes(search.toLowerCase().replace(/\s/g, '-')) || repo.language.toLowerCase().includes(search.toLowerCase())
+        })
+    }, [search, repos]) 
+
     async function getRepos() {
         const response = await fetch('https://zm-portfolio-backend.up.railway.app/repos')
         const data = await response.json()
-        if (search === '') {
-          setRepos(data)
-        } else {
-          setRepos(data.filter((repo: any) => repo.name.toLowerCase().includes(search.replace(/\s+/g, '-').toLowerCase()) || repo.language.toLowerCase().includes(search.toLowerCase())))
-        }
+        setRepos(data)
     }
 
     function scrollToStats() {
         scrollRef.current?.scrollIntoView({behavior: 'smooth'})
-    }
-    
-    function handleSearch(userSearch: string) {
-        setSearch(userSearch)
-        getRepos()
     }
 
     async function getStats() {
@@ -58,12 +55,12 @@ export default function Projects() {
                     placeholder="Search by project name or language"
                     value={search} 
                     className="w-full bg-transparent outline-none text-sm md:text-lg"
-                    onChange={e => handleSearch(e.target.value)}
+                    onChange={e => setSearch(e.target.value)}
                     />
                 </div>
                 <div className="mt-10 lg:grid lg:grid-cols-3 lg:gap-10">
                     {
-                        repos.map((rep: any) => {
+                        filteredRepos.map((rep: any) => {
                             return (
                                 <RepoCard 
                                     name={rep.name}
