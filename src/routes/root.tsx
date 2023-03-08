@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 export default function Root() {
     return (
-        <div className='bg-white dark:bg-slate-900'>
+        <div className='bg-white dark:bg-zinc-900 font-poppins'>
             <Navbar />
             <Outlet />
             <Footer />

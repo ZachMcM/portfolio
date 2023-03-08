@@ -39,16 +39,16 @@ export default function Projects() {
     }
 
     return (
-        <main className="w-full pt-10 pb-32 px-10 lg:px-28 flex flex-col bg-white dark:bg-slate-900 dark:text-white min-h-screen">
+        <main className="w-full pt-10 pb-32 px-10 lg:px-28 flex flex-col bg-white dark:bg-zinc-900 dark:text-white min-h-screen">
             <ScrollRestoration />
             <section className="my-10">
                 <h1 className="text-2xl font-medium md:text-3xl">Projects</h1>
                 <p className='text-gray-400 mt-3 md:text-lg'>All of my personal and school projects. Ranging from Java programs, to fullstack web apps pulled stragiht from my Github!</p>
-                <button className='flex items-center mt-3 text-sky-400 hover:text-sky-500' onClick={() => scrollToStats()}>
+                <button className='flex items-center mt-3 text-emerald-500 hover:text-emerald-600' onClick={() => scrollToStats()}>
                     <p className='mr-2'>View Stats</p>
                     <i className="fa-solid fa-arrow-down"></i>
                 </button>
-                <div className="outline-none mt-10 flex items-center dark:text-white bg-transparent border border-gray-400 p-4 rounded-lg w-full focus-within:outline-sky-400 focus-within:outline-1">
+                <div className="outline-none mt-10 flex items-center dark:text-white bg-transparent border border-gray-400 p-4 rounded-lg w-full focus-within:outline-orange-600 focus-within:outline-1">
                     <i className="cursor-pointer mr-2 fa-solid fa-magnifying-glass text-gray-400"></i>
                     <input 
                     type="text"

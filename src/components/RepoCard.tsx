@@ -8,15 +8,15 @@ export default function RepoCard(repo : any) {
             </div>
             <div className="my-5 flex justify-between">
             <ul className="flex text-lg">
-                <li mr-3><a className="text-sky-400 hover:text-sky-500 mr-5" href={url}><i className="fa-brands fa-github"></i></a></li>
+                <li mr-3><a className="text-emerald-500 hover:text-emerald-600 mr-5" href={url}><i className="fa-brands fa-github"></i></a></li>
                 {
                 homepage != '' &&
-                <li><a className="text-sky-400 hover:text-sky-500" href={homepage}><i className="fa-solid fa-external-link"></i></a></li>
+                <li><a className="text-emerald-500 hover:text-emerald-600" href={homepage}><i className="fa-solid fa-external-link"></i></a></li>
                 }
             </ul>
             <div className="flex items-center text-sm">
                 <p className="text-gray-400 mr-3">{language}</p>
-                <i className={"fa-solid text-sky-400 fa-" + language}></i>
+                <i className={"fa-solid text-emerald-500 fa-" + language}></i>
             </div>
             </div>
         </div>
