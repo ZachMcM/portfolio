@@ -48,7 +48,7 @@ export default function Projects() {
                     <p className='mr-2'>View Stats</p>
                     <i className="fa-solid fa-arrow-down"></i>
                 </button>
-                <div className="outline-none mt-10 flex items-center dark:text-white bg-transparent border border-gray-400 p-4 rounded-lg w-full focus-within:outline-orange-600 focus-within:outline-1">
+                <div className="outline-none mt-10 flex items-center dark:text-white bg-transparent border border-gray-400 p-4 rounded-lg w-full focus-within:outline-emerald-500 focus-within:outline-1">
                     <i className="cursor-pointer mr-2 fa-solid fa-magnifying-glass text-gray-400"></i>
                     <input 
                     type="text"
